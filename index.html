@@ -2,84 +2,121 @@
 <html lang="is">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Verkefni 5—Bókabúðin v2</title>
-    <link rel="stylesheet" href="grid-overlay.css">
-    <link rel="stylesheet" href="grid.css">
+    <title>Verkefni 5—Bókabúðin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montaga&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <!--
-      Sama og með v4:
-      Hér vantar helling af div'um, sections og þannig. Virkni innan hvers „box“ er svipuð og getur
-      verið endurnýtt.
-
-      Sýnilausn fyrir v5 verður gefin út miðvikudaginn 7. okt og verður hægt að nýta hana
-    -->
-
-    <h1>Bækur, gamlar og nýjar</h1>
-    <h2>Þig vantar bækur; við eigum bækur</h2>
+    <header>
+      <div class="content">
+        <h1>Bækur, gamlar og nýjar</h1>
+        <h2>Þig vantar bækur; við eigum bækur</h2>
+      </div>
+    </header>
 
     <main>
-      Viðburðir
-      Útgáfuteiti bókarinnar Vaðlaheiðarvegavinnuverkfærageymsluskúr
-      Mættu í útgáfuteiti nýjustu bókarinnar okkar hjá Bókabúðinni: Vaðlaheiðarvegavinnuverkfærageymsluskúr.
-      <a href="#">Lesa nánar</a>
-
-      Fundur
-      Fundur um stöðu bókabúðarinnar.
-      <a href="#">Lesa nánar</a>
-
-      Opið alla daga
-        Opið 9–19 alla virka daga
-        Opið 10–18 laugardaga
-        Opið 12—16 sunnudaga
-
-      <a href="#">Lesa nánar</a>
+      <div class="events grid">
+        <h2>Viðburðir</h2>
 
 
-      <h2>Bækur</h2>
+          <section class="event grid-4 grid-5 grid-10-event">
+			<section class="event-text">
+			  <h3>Útgáfuteiti bókarinnar Vaðla&shy;heiðar&shy;vega&shy;vinnu&shy;verkfæra&shy;geymslu&shy;skúr</h3>
+              <p>Mættu í útgáfuteiti nýjustu bókarinnar okkar hjá Bókabúðinni: Vaðla&shy;heiðar&shy;vega&shy;vinnu&shy;verkfæra&shy;geymslu&shy;skúr.</p>
+              <a href="#">Lesa nánar</a>
+            </section>
+			<div class="overlay">Útgáfuteiti bókarinnar Vaðla&shy;heiðar&shy;vega&shy;vinnu&shy;verkfæra&shy;geymslu&shy;skúr</div>
+		  </section>
+
+          <section class="event grid-4 grid-5 grid-10-event">
+            <section class="event-text">
+			  <h3>Fundur</h3>
+			  <p>Fundur um stöðu bóka&shy;búðarinnar.</p>
+			  <a href="#">Lesa nánar</a>
+			</section>
+			<div class="overlay">Fundur</div>
+          </section>
+
+          <section class="event grid-4 grid-5 grid-10-event">
+
+            <section class="event-text">
+			  <h3>Opið alla daga</h3>
+
+			  <ul>
+			    <li>Opið 9–19 alla virka daga</li>
+				<li>Opið 10–18 laugardaga</li>
+				<li>Opið 12—16 sunnudaga</li>
+			  </ul>
+
+              <a href="#">Lesa nánar</a>
+            </section>
+			<div class="overlay">Opið alla daga</div>
+		  </section>
 
 
+      </div>
 
-      <img src="img/bok1.jpg" alt=""></div>
-
-      Lærðu að læra
-      Jóna Jónsdóttir
-
-      4.500 kr.
-      <button>Kaupa</button>
+      <div class="books grid">
+        <h2>Bækur</h2>
 
 
+          <section class="book grid-3 grid-5 grid-10-book">
+            <div class="image"><img src="img/bok1.jpg" alt=""></div>
+            <div class="content">
+              <div class="heading">
+                <h3>Lærðu að læra</h3>
+                <h4>Jóna Jónsdóttir</h4>
+              </div>
+              <div class="buy">
+                <span class="price">4.500 kr.</span>
+                <button>Kaupa</button>
+              </div>
+            </div>
+          </section>
 
-      <img src="img/bok2.jpg" alt=""></div>
+          <section class="book grid-3 grid-5 grid-10-book">
+            <div class="image"><img src="img/bok2.jpg" alt=""></div>
+            <div class="content">
+              <div class="heading">
+                <h3>Listabókin</h3>
+                <h4>Guðrún Guðrúnardóttir</h4>
+              </div>
+              <div class="buy">
+                <span class="price">100.500 kr.</span>
+                <button>Kaupa</button>
+              </div>
+            </div>
+          </section>
 
-      Listabókin
-      Guðrún Guðrúnardóttir
+          <section class="book grid-3 grid-5 grid-10-book">
+            <div class="image"><img src="img/bok3.jpg" alt=""></div>
+            <div class="content">
+              <div class="heading">
+                <h3>Um rósir og blóm í bókum</h3>
+                <h4>Jón Jónsson</h4>
+              </div>
+              <div class="buy">
+                <span class="price">500 kr.</span>
+                <button>Kaupa</button>
+              </div>
+            </div>
+          </section>
 
-      100.500 kr.
-      <button>Kaupa</button>
+          <section class="book grid-3 grid-5 grid-10-book">
+            <div class="image"><img src="img/bok4.jpg" alt=""></div>
+            <div class="content">
+              <div class="heading">
+                <h3>Ókeypis bók með fáum orðum</h3>
+                <h4>Jóna Jónsdóttir</h4>
+              </div>
+              <div class="buy">
+                <span class="price">0 kr.</span>
+                <button>Kaupa</button>
+              </div>
+            </div>
+          </section>
 
-
-
-      <img src="img/bok3.jpg" alt=""></div>
-
-      Um rósir og blóm í bókum
-      Jón Jónsson
-
-      500 kr.
-      <button>Kaupa</button>
-
-
-
-      <img src="img/bok3.jpg" alt=""></div>
-
-      Ókeypis bók með fáum orðum
-      Jóna Jónsdóttir
-
-      0 kr.
-      <button>Kaupa</button>
-
+      </div>
     </main>
   </body>
 </html>
